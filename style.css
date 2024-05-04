@@ -1,0 +1,74 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+.header{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    
+}
+.nav{
+    background: #89CFF3;
+}
+.main{
+    background: #A0E9FF;
+    height: 300px;
+    padding: 40px;
+    font-size: 20px;
+    text-align:center ;
+}
+.aside1{
+    background: #A0E9FF;
+}
+.footer{
+    background: #CDF5FD;
+}
+/* tampilan rsponsive*/
+@media all and (min-width:800px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order:2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+        order: 4;
+    }
+}
+@media all and (min-width:600px){
+    .aside1{
+        flex: 1;
+    }
+}
+.container{
+    width: 850px;
+}
+.card-header{
+    color: blue;
+
+}
+ul{
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
